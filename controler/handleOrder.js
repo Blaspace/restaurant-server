@@ -1,4 +1,4 @@
-import Order from "../schema/OrderSchema"
+import Order from "../schema/OrderSchema.js"
 
 async function handleOrder(req, res) {
     if(req.body){
