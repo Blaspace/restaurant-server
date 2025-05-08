@@ -4,7 +4,7 @@ import handleLogin from "../controler/Login.js";
 import handleGetUser from "../controler/GetUser.js";
 import handleOrder from "../controler/handleOrder.js";
 import AuthMiddelware from "../middleware/AuthMiddelware.js";
-import handlePayStack from "../controler/paystack";
+import handlePayStack from "../controler/paystack.js";
 
 const UserRoute = express.Router();
 
