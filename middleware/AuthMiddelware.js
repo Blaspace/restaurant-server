@@ -14,7 +14,7 @@ const Auth = async (req, res, next) => {
   if (user) {
     try {
       const payload = jwt.verify(accessToken, process.env.JWT_SECRETE);
-      req.user = User;
+      req.user = user;
       next();
     } catch (error) {
       return res.status(401).send("Authentication invalid");
