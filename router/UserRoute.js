@@ -4,7 +4,7 @@ import handleLogin from "../controler/Login.js";
 import handleGetUser from "../controler/GetUser.js";
 import handleOrder from "../controler/handleOrder.js";
 import AuthMiddelware from "../middleware/AuthMiddelware.js";
-import handlePayStack from "../controler/paystack.js";
+import handlePaystack from "../controler/handlePaystack.js";
 
 const UserRoute = express.Router();
 
@@ -18,6 +18,6 @@ UserRoute.post("/order", AuthMiddelware, handleOrder);
 
 UserRoute.get("/orders", AuthMiddelware)
 
-UserRoute.post("/paystack", handlePayStack)
+UserRoute.post("/paystack", handlePaystack)
 
 export default UserRoute;

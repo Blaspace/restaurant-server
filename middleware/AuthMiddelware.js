@@ -23,3 +23,5 @@ const Auth = async (req, res, next) => {
     return res.status(401).send("User does not exist");
   }
 };
+
+export default Auth
